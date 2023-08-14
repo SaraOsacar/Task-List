@@ -1,0 +1,91 @@
+/*.pageContainer {
+    background-color:rgb(249, 230, 206);
+}*/
+
+.toDoContainer {
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: rgb(247, 229, 208);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toDoCreateForm {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.toDoInput {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.buttonCreate {
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: rgb(178, 23, 155);
+    padding: 15px, 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 40px;
+    color: white;
+    width: 120px;
+
+}
+.toDosContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+   
+}
+.toDo {
+    padding: 10px;
+    background-color: rgb(142, 244, 91);
+    margin-bottom: 30px;
+    width: 300px;
+    margin-left: 80px;
+    
+
+}
+.toDoTitle {
+    flex: 1;
+    font-size: 20px;
+
+}
+.toDoUpdateForm, .toDoInfo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.button {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(59, 56, 244);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.buttonDelete {
+    border: none;
+        border-radius: 3px;
+        background-color: rgba(236, 17, 6, 0.808);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        
+}

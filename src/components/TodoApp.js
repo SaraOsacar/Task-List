@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ToDo from './ToDo';
+import '../styles/App.scss';
 
 export default function TodoApp() {
   const [title, setTitle] = useState('Hola');
