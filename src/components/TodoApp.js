@@ -3,7 +3,7 @@ import ToDo from './ToDo';
 import '../styles/App.scss';
 
 export default function TodoApp() {
-  const [title, setTitle] = useState('Hola');
+  const [title, setTitle] = useState('');
   const [toDo, setToDo] = useState([]);
 
   function handleChange(event) {
@@ -37,26 +37,51 @@ export default function TodoApp() {
   }
 
   return (
-    <div className="toDoContainer">
-      <form className="ToDoCreateForm" onSubmit={handleSubmit}>
-        <input onChange={handleChange} className="ToDoInput" value={title} />
-        <input
-          onClick={handleSubmit}
-          type="submit"
-          value="Create to Do"
-          className="buttonCreate"
+    <div>
+      <header className="header">
+        <img
+          src="https://saposyprincesas.elmundo.es/wp-content/uploads/2021/06/Tecnica-del-post-it-Destacada.jpg"
+          alt="imagen postit"
+          className="headerImg"
         />
-      </form>
-      <div className="toDosContainer">
-        {toDo.map((item) => (
-          <ToDo
-            key={item.id}
-            item={item}
-            onUpdate={handleUpdate}
-            onDelete={handleDelete}
+        <h1 className="headerTitle">✏️ Task list ✏️</h1>
+        <span className="headerPhrase">
+          Write your tasks and delete them once you have finished them!
+        </span>
+      </header>
+      <div className="toDoContainer">
+        <form className="ToDoCreateForm" onSubmit={handleSubmit}>
+          <div className="inputContainer">
+          <input
+            onChange={handleChange}
+            className="ToDoInput"
+            value={title}
+            placeholder="Write your task here"
           />
-        ))}
+          <input
+            onClick={handleSubmit}
+            type="submit"
+            value="Create to Do"
+            className="buttonCreate"
+          />
+          </div>
+        </form>
+        <div className="toDosContainer">
+          {toDo.map((item) => (
+            <ToDo
+              key={item.id}
+              item={item}
+              onUpdate={handleUpdate}
+              onDelete={handleDelete}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  );
+      <footer className="footer">
+      <div className="footerContent">
+        <p>&copy; 2023 Task App. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+);
 }
