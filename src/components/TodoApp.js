@@ -46,7 +46,7 @@ export default function TodoApp() {
         />
         <h1 className="headerTitle">✏️ Task list ✏️</h1>
         <p className="headerPhrase">
-          Write your tasks and delete them once you have finished them. You can
+          Write your tasks and delete them once you have finished them.<br/> You can
           also update them if you want to change something!
         </p>
       </header>
@@ -80,7 +80,7 @@ export default function TodoApp() {
       </div>
       <footer className="footer">
         <div className="footerContent">
-          <p>&copy; 2023 Task App. All rights reserved.</p>
+          <p>&copy; 2023 Task List App. All rights reserved.</p>
         </div>
       </footer>
     </div>
