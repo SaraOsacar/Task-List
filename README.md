@@ -1,4 +1,4 @@
-## Task List 📝 React Project 💫
+## Task List 📓  React Project 💫
 
 Task List es una aplicación para la gestión de tareas mediante la creación, edición y eliminación de notas de manera ilimitada y eficiente. Esta aplicación, desarrollada en React, te brinda la herramienta perfecta para mantener un registro organizado de tus tareas pendientes.
 
