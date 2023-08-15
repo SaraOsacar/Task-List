@@ -33,8 +33,12 @@ export default function ToDo({ item, onUpdate, onDelete }) {
     return (
       <div className="toDoInfo">
         <span className="toDoTitle">{item.title} </span>
-        <button className="button" onClick={() => setIsEdit(true)}>Edit</button>
-        <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>Delete</button>
+        <button className="button" onClick={() => setIsEdit(true)}>
+          Edit
+        </button>
+        <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>
+          Delete
+        </button>
       </div>
     );
   }

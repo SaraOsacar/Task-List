@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(246, 223, 227);
+  background-color: rgb(207, 248, 248);
   margin: 0;
   padding: 0;
 }
 
 .header {
   text-align: center;
-  background-color: rgb(246, 223, 227);
+  background-color: rgb(207, 248, 248);
 }
 .headerTitle {
   text-transform: uppercase;
@@ -14,19 +14,23 @@ body {
   font-size: 45px;
 }
 .headerImg {
-  margin-top: 20px;
+  margin-top: 50px;
   height: 300px;
   border-radius: 15px;
 }
 .headerPhrase {
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .inputContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .toDoContainer {
   width: 600px;
@@ -40,19 +44,18 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .toDoCreateForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 .toDoInput {
-    padding: 10px;
-    border-radius: 3px;
-    width: 90%;
-    
+  padding: 10px;
+  border-radius: 3px;
+  width: 90%;
 }
 
 .toDoInputUpdate {
@@ -65,18 +68,15 @@ body {
 }
 
 .buttonCreate {
-
   border-radius: 5px;
   margin-top: 15px;
   background-color: yellow;
   padding: 15px 20px;
   cursor: pointer;
-  height: 40px;
+
   color: black;
   font-weight: bold;
   border: 2px solid red;
- 
-    
 }
 .toDosContainer {
   display: flex;
@@ -86,7 +86,8 @@ body {
 }
 .toDo {
   padding: 10px;
-  background-color: rgb(145, 242, 97);
+  /*background-color: rgb(145, 242, 97);*/
+  background-color: rgb(250, 236, 236);
   margin-bottom: 30px;
   width: 300px;
   margin-left: auto;
@@ -97,6 +98,7 @@ body {
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 50px;
 }
 .toDoTitle {
   flex: 1;

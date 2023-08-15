@@ -45,25 +45,26 @@ export default function TodoApp() {
           className="headerImg"
         />
         <h1 className="headerTitle">✏️ Task list ✏️</h1>
-        <span className="headerPhrase">
-          Write your tasks and delete them once you have finished them!
-        </span>
+        <p className="headerPhrase">
+          Write your tasks and delete them once you have finished them. You can
+          also update them if you want to change something!
+        </p>
       </header>
       <div className="toDoContainer">
         <form className="ToDoCreateForm" onSubmit={handleSubmit}>
           <div className="inputContainer">
-          <input
-            onChange={handleChange}
-            className="ToDoInput"
-            value={title}
-            placeholder="Write your task here"
-          />
-          <input
-            onClick={handleSubmit}
-            type="submit"
-            value="Create to Do"
-            className="buttonCreate"
-          />
+            <input
+              onChange={handleChange}
+              className="ToDoInput"
+              value={title}
+              placeholder="Write your task here"
+            />
+            <input
+              onClick={handleSubmit}
+              type="submit"
+              value="Create to Do"
+              className="buttonCreate"
+            />
           </div>
         </form>
         <div className="toDosContainer">
@@ -78,10 +79,10 @@ export default function TodoApp() {
         </div>
       </div>
       <footer className="footer">
-      <div className="footerContent">
-        <p>&copy; 2023 Task App. All rights reserved.</p>
-      </div>
-    </footer>
-  </div>
-);
+        <div className="footerContent">
+          <p>&copy; 2023 Task App. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
 }
