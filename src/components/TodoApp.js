@@ -40,14 +40,14 @@ export default function TodoApp() {
     <div>
       <header className="header">
         <img
-          src="https://saposyprincesas.elmundo.es/wp-content/uploads/2021/06/Tecnica-del-post-it-Destacada.jpg"
+          src="https://media.istockphoto.com/id/1357339450/es/foto/oficina-escritorio-bol%C3%ADgrafos-l%C3%A1pices-tijeras-planta-de-flores-regla-del-tri%C3%A1ngulo-clips.jpg?s=612x612&w=0&k=20&c=OztAkY5cm2PnJSjsyRq3Tu6GsnkcvnIdzV-5TiSL8Zc="
           alt="imagen postit"
           className="headerImg"
         />
         <h1 className="headerTitle">✏️ Task list ✏️</h1>
         <p className="headerPhrase">
-          Write your tasks and delete them once you have finished them.<br/> You can
-          also update them if you want to change something!
+          Write your tasks and delete them once you have finished them.
+          <br /> You can also update them if you want to change something!
         </p>
       </header>
       <div className="toDoContainer">
