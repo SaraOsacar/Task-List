@@ -1,12 +1,11 @@
 body {
-  /*background-color: rgb(207, 248, 248);*/
+  /*background-color: rgb(203, 240, 240);*/
   margin: 0;
   padding: 0;
 }
 
 .header {
   text-align: center;
-  /*background-color: rgb(207, 248, 248);*/
 }
 
 .headerTitle {
@@ -20,7 +19,6 @@ body {
   height: 300px;
   border-radius: 15px;
 }
-
 .headerPhrase {
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
@@ -45,7 +43,8 @@ body {
   gap: 10px;
   border: 2px solid black;
   border-radius: 13px;
-  background-color:rgb(249, 198, 249);
+  /*background-color: rgb(249, 198, 249);*/
+  background-color: rgb(160, 203, 160);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -87,7 +86,7 @@ body {
 }
 
 .buttonCreate:hover {
-  background-color: rgb(123, 243, 123);
+  transform: translateX(13px);
 }
 
 .toDosContainer {
@@ -138,7 +137,7 @@ body {
 }
 
 .buttonDelete {
-  margin-left:10px;
+  margin-left: 10px;
   border: none;
   border-radius: 3px;
   background-color: rgba(236, 17, 6, 0.808);
@@ -151,4 +150,3 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
