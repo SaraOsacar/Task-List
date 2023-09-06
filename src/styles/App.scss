@@ -152,6 +152,7 @@ body {
   width: 100%;
   padding: 10px 0;
   text-align: center;
+  z-index: 999;
 }
 @media screen and (max-width: 480px) {
   .header {
@@ -197,6 +198,6 @@ body {
   }
 
   .footer {
-    padding: 10px 0;
+    display:none;
   }
 }
